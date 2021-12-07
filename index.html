@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend> Example fieldset </legend>
+          <section>
+            <div>
+              <label for="name">Full Name:</label>
+              <input id="name" type="text" name="name" placeholder="put name here"/>
+            </div>
+            <div>
+              <label for="location">Zipcode:</label>
+              <input 
+                id="location"
+                type="text"
+                name="zipcode"
+                autofocus="on"
+                maxlength="5"
+                required
+                placeholder="provide zipcode here"
+              />
+            </div>
+            <div>
+              <label for="form-message">Your message:</label>
+              <textarea
+                id="form-message"
+                name="message"
+                autofocus="on"
+                required
+                maxlength="200"
+                placeholder="write your message here"
+              ></textarea>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" minlength="10" placeholder="write password here">
+            </div>
+          </section>
+          <div>
+            <h2>Favorite colors</h2>
+            <div>
+              <input type="radio" id="red" name="color" value="red">
+              <label for="red">Red</label>
+            </div>
+            <div>
+              <input type="radio" id="blue" name="color" value="blue">
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="radio" id="green" name="color" value="green">
+              <label for="green">Green</label>
+            </div>
+          </div>
+          <div>
+            <h2>Favorite Foods</h2>
+            <div>
+              <input type="checkbox" id="burgers" name="burgers">
+              <label for="burgers">Burgurs</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Sanwitch" name="Sanwitch">
+              <label for="Sanwitch">Sanwitches</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Pizza" name="Pizza">
+              <label for="Pizza">Pizza's</label>
+            </div>
+          </div>
+          <div>
+            <h2>Choos a Font</h2>
+            <label for="fonts">Choose a font:</label>
+            <select name="fonts" id="fonts" size="5">
+              <option value="arial">Arial</option>
+              <option value="times">Times New Roman</option>
+              <option value="comicsans">Comic Sans</option>
+              <option value="papyrus">Papyrus</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit"> Submit </button>
+            <button type="reset"> Reset </button>
+            <button type="button"> Button </button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
